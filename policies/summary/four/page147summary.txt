@@ -1,0 +1,14 @@
+**Medicare Part D Coverage Review**
+
+This document outlines the process for reviewing Medicare Part D denial decisions. An IRO conducts a 24-hour QIO review to determine initial decisions and approve coverage. Approved coverage continues until medically necessary services are provided, maintaining the original discharge date.
+
+**Key Terms:** QIO (Insurance Oversight Institution), Denial, Medical Information, Provider Data, Initial Decision, Alternate Appeal, Level 1, Legal Term – “fast review”, Final Service Date.
+
+**Important Points:**
+
+*   **Level 2 Alternate Appeal:** Disagreement with initial denial triggers a Level 3 Appeal.
+*   **Fast Review:** IRO conducts a rapid review (24 hours) answering questions (72 hours).
+*   **Level 1 & Level 2 Decisions:** Level 1 denial upheld – QIO pays hospital services until medically necessary.
+*   **Level 3 Appeal:** Disagreement with initial decision – ALJ hearing required.
+*   **ALD & Attorney Adjudicator:** ALJ federal employee, attorney adjudicator handles Level 3 decisions.
+*   **Additional Levels of Appeal:** Continue if dollar value isn’t met.

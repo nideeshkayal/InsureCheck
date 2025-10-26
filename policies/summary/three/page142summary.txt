@@ -1,0 +1,7 @@
+**Summary:**
+
+This document details coverage decisions and appeals for Part D drug coverage.  The process begins with determining benefits based on cost-sharing tiers, requiring exceptions for non-covered drugs, restrictions, or prioritization.  A physician’s medical explanation and relevant medical information are mandatory for exceptions, ensuring appropriate treatment.
+
+If an exception is requested, the physician must provide a detailed explanation for the request and relevant medical information.  For fast coverage decisions, the physician must meet specific requirements – being seeking a drug and not yet received – and automatically grant the decision.
+
+Requests for fast coverage decisions are automatically approved if the physician or prescriber requests it.  If a patient requests a fast coverage decision without physician support, the decision will be made whether the patient’s health requires it, and the physician will either grant the decision or send an appropriate letter.  The document details how to file a complaint and provides links to the website and relevant plans for further information.

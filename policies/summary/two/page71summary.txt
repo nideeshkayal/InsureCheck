@@ -1,0 +1,7 @@
+**Review Request for First Choice Next**
+
+South Carolina law mandates an independent external review of Adverse Benefit determinations made by First Choice Next. Covered members and providers can request this review at any point, triggered by denials, appeals, or notification of a final determination. Authorization is required to initiate the review.
+
+The review focuses on compliance with the Public Health Service Act, specifically regarding medical necessity, suitability, effectiveness, or experimental/investigational status. The review team assesses whether the service is appropriately covered under the policy.
+
+**Critical Updates:** The review process now includes a certification from a licensed physician, requiring the individual to meet specific medical criteria (life-threatening condition, lack of improvement, suitability, or benefit over standard care) to justify the request for review. Expedited external reviews are not permitted for retrospective adverse benefit determinations.

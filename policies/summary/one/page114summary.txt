@@ -1,0 +1,5 @@
+The Cigna Preferred Medicare (HMO) plan utilizes the Quality Improvement Organization (QIO) for appeals. Level 1 appeals are mandatory for denial decisions, requiring expedited review. The QIO conducts an independent review of the case, examining medical information and provider opinions to determine if coverage should continue.
+
+If the QIO finds no medical justification, coverage ends at noon on the day after the appeal. If the QIO decides coverage continues, it’s subject to five levels of appeal, with a maximum duration of five. A fast-track appeal is available for specific services: Home health, skilled nursing, and CORF.
+
+If the review results in a denial, the Quality Improvement Organization will provide a Detailed Explanation of Non-Coverage outlining the reasons for ending coverage.  If the review is favorable, continued coverage is permitted, with costs remaining the responsibility of the insured.  A Level 2 appeal is permitted if the initial appeal is denied.

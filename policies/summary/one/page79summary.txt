@@ -1,0 +1,7 @@
+**Part D Prescription Drug Coverage Summary**
+
+This section details Medicare’s rules for Part D prescription drug coverage. Payments are not included in out-of-pocket costs. Key exclusions include drugs outside the United States, not covered by the plan, and medications from out-of-network pharmacies not meeting plan requirements. Payments for drugs covered by Part A or B are also excluded.
+
+The “Real-Time Benefit Tool” provides estimated costs, but it’s crucial to consult Chapter 5 for detailed drug coverage rules and exclusions. The current page emphasizes understanding these rules to accurately track out-of-pocket expenses.
+
+The process involves receiving an EOB report – a monthly summary of payments – that details the stage of coverage your prescription drugs are in and how much you’ve spent. This report will indicate when you’ve moved to the Catastrophic Coverage Stage, triggering the next payment phase.  The plan tracks both “Out-of-Pocke t Costs” and “Total Drug Costs” to ensure compliance with Medicare’s requirements.

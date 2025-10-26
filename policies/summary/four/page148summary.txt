@@ -1,0 +1,3 @@
+---
+
+This document details Medicare Part D denial review, focusing on the 24-hour QIO review and Level 3 appeals. Initial decisions are made by the IRO, followed by a Level 1 or Level 2 appeal, which triggers a Level 3 appeal. The ALJ and Attorney Adjudicator handle Level 3 decisions, and the appeals process continues if the initial decision is not upheld.  If a Level 3 appeal is denied, the appeals process continues, potentially leading to a Level 4 appeal.  Level 4 appeals involve a final service date, and the Council reviews the appeal, providing an answer.  If the Council denies the appeal, the appeals process continues to the next level, potentially culminating in a Level 5 appeal for drug requests involving a dollar value threshold.

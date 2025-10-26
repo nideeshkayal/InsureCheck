@@ -1,0 +1,5 @@
+The current page details Medicare Part D prescription drug coverage, emphasizing cost-sharing tiers. There are five tiers: Lowest Cost Sharing Tier (1), Preferred Generic Drugs, Preferred Brand Drugs, Non-Preferred Drugs, and Specialty Drugs.
+
+The drug cost varies based on the tier; a one-month supply of each covered insulin product will cost up to $35 regardless of cost-sharing tier. To determine your tier, review the drug list within the plan.
+
+During the Initial Coverage Stage, your share of the cost is either a copayment or coinsurance, dependent on the tier.  The plan covers prescriptions filled at out-of-network pharmacies in limited circumstances.  Refer to Chapter 5, Section 2.5 for details on out-of-network pharmacy coverage.

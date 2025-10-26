@@ -1,0 +1,11 @@
+**Medical Benefits Chart Summary**
+
+This chart outlines Medicare Supplemental Coverage’s medical benefits. Coverage levels are $0 for Medicare-covered stays, with $800 lifetime reserved and remaining days covered.  Opioid treatment programs are covered through an OTP, with dispensing and administration of MAT medications, counseling, and periodic assessments.
+
+Services covered include:
+*   Opioid medication ($35/visit)
+*   Physical therapy, occupational therapy, and speech therapy ($250/visit)
+*   Diagnostic tests and therapies (X-rays, radiation, blood tests, CT/MRI) ($275/visit)
+*   Out-of-network services are subject to 20% coinsurance.
+
+Priorauthorization is required for various services, including specialist visits and ambulatory surgical center services.  Some services, like blood testing, begin with the first pint.  Priorauthorization is required for specific diagnostic procedures and tests.

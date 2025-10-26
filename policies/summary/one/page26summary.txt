@@ -1,0 +1,5 @@
+HCBS (Health Care Business Services) eligibility for Cigna Preferred Medicare (HMO) members requires careful verification due to the plan’s conditional coverage. Key requirements include demonstrating state residency, HIV status, low income, and uninsured/under-insured status. The plan’s coverage is contingent upon meeting these specific criteria.
+
+The document details that providers must be certified as “providers” within the plan’s network. Network providers are directly billed for services provided to members, with the member's share of cost reflected. Coverage is defined as medically necessary, requiring diagnoses, treatments, or services aligned with Medicare standards.
+
+Crucially, the plan covers all services covered by Original Medicare.  However, it has specific exclusions regarding out-of-network care.  Emergency care from out-of-network providers is covered, and Medicare-certified dialysis services are covered outside the plan’s service area. Authorization is necessary before seeking care from an out-of-network provider, and cost-sharing limits are established to ensure compliance with Original Medicare.

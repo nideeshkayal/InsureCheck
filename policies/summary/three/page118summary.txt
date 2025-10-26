@@ -1,0 +1,5 @@
+**New Policy Requirement:** Jefferson Health Plan Flex (PPO) Part D mandates mandatory vaccination administration. Maximum monthly cost is $35 per supply for each drug, tiered based on vaccine price and supply.
+
+**Key Changes & Restrictions:** Providers must bill directly to the plan for services received, with exceptions for out-of-network providers.  Patient responsibility remains for the full cost of services, even when billed by an out-of-network provider.  If an out-of-network pharmacy bill is received, the patient must pay the full cost.
+
+**Coverage Considerations:** The plan will consider requests for payment.  If a request is made, the provider must provide additional information from the patient.  The provider will review the request and make a coveragedecision.

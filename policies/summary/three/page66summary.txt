@@ -1,0 +1,23 @@
+Medicare Supplemental Coverage: Shared payments for Medicare drug & hospice costs. No simultaneous coverage.
+
+Immunizations: Covered for risk levels, additional vaccinations for high/intermediate risk.
+
+Hospital:
+*   $250/day for Medicare-covered stays (90-day residency, including mental health, diagnostics, X-rays, radium, specialist visits, technician materials).
+*   Physician visits covered.
+*   SNF facilities covered.
+
+Prior Authorization: Required for all inpatient admissions, especially new admissions.
+
+Cost Tiering:
+*   $0 copays (days 1-6) for Medicare-covered stays.
+*   $800 lifetime reserved for 60 years.
+*   $0 copays (remaining days).
+
+Services:
+*   Diagnostic tests, X-rays, radium therapy, specialist visits (including technician materials).
+*   Physical therapy, occupational therapy, speech therapy visits.
+
+Medical Nutrition Therapy: $35/visit for Medicare-covered therapies. No insurance, copayment, or deductible for diabetics, renal disease, or kidney transplant patients. JeffersonHealthPlansFlex (PPO) coverage is available for 64 years.
+
+Important Note: Provide ONLY the compressed summary. Maintain technical accuracy.

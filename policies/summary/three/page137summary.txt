@@ -1,0 +1,5 @@
+The Independent Review Entity (IRE) is a Medicare-appointed organization tasked with reviewing appeals and decisions regarding insurance coverage for Medicare Part B prescription drug benefits. Step 1 involves reviewing the appeal, sending information to the IRE, and granting a fast appeal (Level 2) within 72 hours of receipt. If the request is not met, the IRE will forward it to Level 2, requiring a review.
+
+If the request is for a medical item or service, the IRE will provide an answer within 30 calendar days. However, if additional information is needed to make a decision, the IRE may extend this timeframe up to 14 calendar days. The IRE's decision must be written, detailing the reasoning behind the outcome.
+
+Finally, the IRE will provide information on how to handle problems or complaints, including filing a fast complaint within 24 hours.

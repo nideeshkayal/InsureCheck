@@ -1,0 +1,3 @@
+The plan outlines Part D drug cost tracking for Jefferson Health Plans Flex (PPO) members. All Part D drug costs must be reported, with a maximum monthly supply cost of $35 per insulin product per tier. The plan utilizes five cost-sharing tiers: Non-Preferred (specialty drugs), Preferred Generic (generic drugs), and various tiers in between.
+
+The table displays a one-month supply cost for each drug, showing the cost as either a payment or coinsurance, dependent on the tier. Costs are lower than the copayment in slower-priced cases.  The page details the initial coverage stage, where the member’s share of the drug cost is either a payment or coinsurance, dependent on the tier’s cost-sharing.  Understanding the drug tiers is crucial for accurate cost assessment.

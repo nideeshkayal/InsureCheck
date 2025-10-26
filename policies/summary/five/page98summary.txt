@@ -1,0 +1,11 @@
+H.O.METOWN HEALTH provides comprehensive health benefits across various plans, including group insurance, student coverage, and labor management plans. Coordination of benefits is crucial; Hometown Health pays benefits to other insurers when overpayment occurs, discharging liability. The plan prioritizes payment to members contingent on coordination.
+
+The policy establishes a determination method for benefit allocation:
+
+*   **No Coordination:** Benefits are determined by the first applicable rule – either no coordination or Dental Plans.
+*   **Dental Plans:** If a surgical procedure is submitted, the Member is covered by a Dental Plan.
+*   **Dependent/Parent:** Benefits are determined based on parent’s birthday, prioritizing the parent with the earlier birthday.
+*   **Dependent Child:** For dependent children, the plan with the parent with custody benefits first.
+*   **Inactive Employee:** Coverage is primary for eligible employees.
+
+This page emphasizes the importance of coordination and clarifies specific rules related to coverage and liability.

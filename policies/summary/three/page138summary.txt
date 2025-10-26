@@ -1,0 +1,5 @@
+The Independent Review Entity (IRE) oversees Medicare Part B prescription drug benefits, establishing a process for appeals and decisions. When a request is for medical item or service, the IRE requires authorization within 30 days, extending to 14 days for expedited requests. If the request is for a Medicare Part B prescription drug, authorization or provision must occur within 72 hours after the decision from the review organization.
+
+If the request is not met, the IRE forwards it to Level 2 for review. This process culminates in a Level 3 appeal, requiring a dollar value determination and a letter outlining the necessary steps. Level 3 appeals are handled by an Administrative Law Judge.
+
+If you choose to appeal further, you’ll navigate three levels, starting with Level 2, before entering the Level 3 appeal process. The Level 3 appeal involves checking coverage, sending paperwork, and ensuring adherence to all rules for medical care reimbursement.

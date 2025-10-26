@@ -1,0 +1,34 @@
+Yourshareofthecostwhenyougetalong-term supplyofacovered PartD
+prescription drug:
+Standard Mail-order cost
+sharing
+(uptoa100-daysupply)Standard retailcost
+sharing(in-network)
+(uptoa100-daysupply) Tier
+$0copay $0copay Cost-Sharing Tier1
+(PreferredGeneric)
+$15copay $15copay Cost-Sharing Tier2
+(Generic)
+25%coinsurance 25%coinsurance Cost-Sharing Tier3
+(PreferredBrand)
+40%coinsurance 40%coinsurance Cost-Sharing Tier4
+(Non-PreferredDrug)
+Along-termsupplyisnot
+availablefordrugsinthe
+SpecialtyTier.Along-termsupplyisnot
+availablefordrugsinthe
+SpecialtyTier.Cost-Sharing Tier5
+(Specialty)
+Youwon’tpaymorethan$70foruptoatwo-month supplyor$105foruptoathree-month supply
+ofeachcoveredinsulinproductregardless ofthecost-sharing tier.
+Section 5.5YoustayintheInitialCoverage Stageuntilyourout-of-pocket costs
+fortheyearreach$2,000
+YoustayintheInitialCoverageStageuntilyourtotalout-of-pocket costsreach$2,000.Youthen
+moveontotheCatastrophic CoverageStage.
+ThePartDEOBthatyoureceivewillhelpyoukeeptrackofhowmuchyou,theplan,andany
+thirdparties,havespentonyourbehalfforyourdrugsduringtheyear.Notallmemberswillreach
+the$2,000out-of-pocket limitinayear.
+Wewillletyouknowifyoureachthisamount.Ifyoudoreachthisamount,youwillleavethe
+InitialCoverageStageandmoveontotheCatastrophic CoverageStage.SeeSection1.3onhow
+Medicarecalculatesyourout-of-pocket costs.2025EvidenceofCoverageforJeffersonHealthPlansFlex(PPO) 110
+CHAPTER 6WhatyoupayforyourPartDprescription drugs

@@ -1,0 +1,5 @@
+**Summary**
+
+This chapter details the coverage for JeffersonHealthPlansFlex (PPO) Medicare coverage. Equipment, supplies, and maintenance are covered, with rental, delivery, and tubing included as part of the plan.  The provider must maintain coverage for five years, extending beyond the initial plan period.  The primary cost is a copayment for each covered medical service, with coinsurance representing a percentage of the total cost.  
+
+The in-network maximum out-of-pocket amount is $7,000 per calendar year for Medicare Part A and Part B services.  Network providers do not count toward this maximum.  Payments for copays and coinsurance for services from out-of-network providers are excluded.  You must provide proof of Medicaid or QMBeligibility to your provider.

@@ -1,0 +1,9 @@
+**Summary:**
+
+This document outlines coverage decisions and appeals for Part D drug coverage. Initial decisions determine benefits based on specific circumstances, requiring exceptions for non-covered drugs, restrictions, or prioritization. Appeals are mandatory following a decision.
+
+The Drug List defines coverage amounts based on cost-sharing tiers. Alternatives drugs are requested for conditions not covered, and cost-sharing amounts apply to alternative drugs. Changes to coverage can be requested to lower cost-sharing tiers.
+
+If an exception is requested, the physician must provide a medical explanation, and the request should include relevant medical information from the doctor.
+
+If multiple tiers are available, exceptions are generally not granted unless the alternative drugs are ineffective and cause adverse reactions.  For issues, contact the appropriate channel for coverage decisions and appeals.

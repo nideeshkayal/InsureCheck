@@ -1,0 +1,13 @@
+Medicare Diabetes Prevention Program (MDPP) enhancements provide expanded coverage for individuals with diabetes, including chiropractic care, orthopedic shoes, and supportive devices for feet. Coverage now includes emergency medications, experimental treatments, and surgical procedures.
+
+Key coverage details include:
+
+*   **Drug Coverage:** The Drug List is the primary source for determining coverage, with quantity limits and provider assessment required.
+*   **Quantity Limits:** Certain drugs have quantity limits to prevent waste.
+*   **Provider Assessment:** Providers must evaluate diagnoses and prescribe necessary tests before coverage is granted.
+*   **Temporary Supply:** A temporary supply is available for up to 30 days for initial coverage, with potential refills.
+*   **Long-Term Care:** Coverage extends beyond the initial 90 days for long-term care facilities.
+*   **Override Request:** A one-time prescription override is needed for a supply run.
+*   **Exception Request:** Providers can request exceptions to the Drug List, potentially covering alternative medications or drugs.
+
+The current page emphasizes the importance of understanding the Drug List, potential changes, and how to request exceptions to ensure adequate coverage for individuals with diabetes.

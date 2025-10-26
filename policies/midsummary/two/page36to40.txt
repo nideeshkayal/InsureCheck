@@ -1,0 +1,11 @@
+SHSC Ind SC PY25:
+
+*   **Coverage:** 6 home health visits, including infusion, hospice, hyperbaric oxygen, hysterectomy, inpatient hospital, and contact lenses.
+*   **Prior Authorization:** Required for lens contacts, pain management, and personal care.
+*   **Surgery:** Blepharoplasty, mastectomy, mastopexy permitted with prior authorization.
+*   **Behavioral Health:** Prior authorization required, except for emergency care.
+*   **Utilization Management:** Monitors program compliance, adhering to SC law and company policies.
+*   **Restrictions:** Exclusions: emergency services, ambulatory detoxification, crisis intervention, and ECT.
+*   **Notification:** Provider notifications within 24 hours for concurrent requests & 72 for prospective requests.
+*   **Denial Decisions:** Based on timely information release; providers must notify members of benefit determinations.
+*   **Cost:** Deductibles, coinsurance, copays, copayment (dollar share), out-of-pocket maximum (excluding premiums).
