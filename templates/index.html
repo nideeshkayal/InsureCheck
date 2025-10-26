@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsureCheck</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background: #f5f5f5;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .app-container {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+
+        /* Left Sidebar */
+        .sidebar {
+            width: 340px;
+            background: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .sidebar-header {
+            padding: 24px 20px 16px 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .app-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .app-subtitle {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .sidebar-content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .section {
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .input-field {
+            flex: 1;
+            padding: 10px 12px;
+            border: 1px solid #d0d0d0;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #4a90e2;
+        }
+
+        .btn {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: #4a90e2;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #357abd;
+        }
+
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #333;
+            border: 1px solid #e0e0e0;
+        }
+
+        .btn-secondary:hover {
+            background: #e8e8e8;
+        }
+
+        .btn-full {
+            width: 100%;
+        }
+
+        .info-card {
+            background: #f8f9fa;
+            border: 1px solid #e8e8e8;
+            border-radius: 6px;
+            padding: 14px;
+            margin-top: 12px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            font-size: 13px;
+        }
+
+        .info-label {
+            color: #666;
+            font-weight: 500;
+        }
+
+        .info-value {
+            color: #1a1a1a;
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .policy-badge {
+            display: inline-block;
+            background: #e8f4f8;
+            color: #2c5f7d;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .empty-state {
+            color: #999;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .error-card {
+            background: #fff3f3;
+            border: 1px solid #ffcdd2;
+            border-radius: 6px;
+            padding: 12px;
+            margin-top: 12px;
+            color: #c62828;
+            font-size: 13px;
+        }
+
+        .upload-box {
+            border: 2px dashed #d0d0d0;
+            border-radius: 6px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .upload-box:hover {
+            border-color: #4a90e2;
+            background: #f8fbff;
+        }
+
+        .upload-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .upload-text {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .upload-subtext {
+            font-size: 11px;
+            color: #999;
+            margin-top: 4px;
+        }
+
+        /* Main Chat Area */
+        .chat-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: #fafafa;
+        }
+
+        .chat-header {
+            background: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 32px;
+        }
+
+        .message {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message-bubble {
+            max-width: 65%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .message.user .message-bubble {
+            background: #4a90e2;
+            color: white;
+        }
+
+        .message.bot .message-bubble {
+            background: #ffffff;
+            color: #1a1a1a;
+            border: 1px solid #e0e0e0;
+        }
+
+        .message-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .message.user .message-avatar {
+            background: #4a90e2;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .message.bot .message-avatar {
+            background: #e8e8e8;
+            color: #666;
+            margin-right: 10px;
+        }
+
+        .typing {
+            display: none;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .typing.active {
+            display: flex;
+        }
+
+        .typing-bubble {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 12px 16px;
+            border-radius: 12px;
+        }
+
+        .typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+
+        .typing-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #999;
+            animation: bounce 1.4s infinite ease-in-out;
+        }
+
+        .typing-dot:nth-child(1) {
+            animation-delay: -0.32s;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: -0.16s;
+        }
+
+        @keyframes bounce {
+            0%, 80%, 100% {
+                transform: scale(0);
+            }
+            40% {
+                transform: scale(1);
+            }
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 60px 40px;
+            color: #666;
+        }
+
+        .welcome-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+
+        .welcome-text {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .welcome-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .feature-item {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 16px;
+            font-size: 13px;
+        }
+
+        .feature-icon {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .feature-desc {
+            color: #666;
+        }
+
+        .chat-input-area {
+            padding: 20px 32px;
+            background: #ffffff;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .input-wrapper {
+            display: flex;
+            gap: 12px;
+            align-items: flex-end;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid #d0d0d0;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            resize: none;
+            min-height: 44px;
+            max-height: 120px;
+            transition: border-color 0.2s;
+        }
+
+        .chat-input:focus {
+            outline: none;
+            border-color: #4a90e2;
+        }
+
+        .btn-send {
+            width: 44px;
+            height: 44px;
+            border-radius: 8px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            transition: all 0.2s;
+            flex-shrink: 0;
+        }
+
+        .btn-send:hover:not(:disabled) {
+            background: #357abd;
+        }
+
+        .btn-send:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        /* Scrollbar */
+        .sidebar::-webkit-scrollbar,
+        .chat-messages::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .sidebar::-webkit-scrollbar-track,
+        .chat-messages::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb,
+        .chat-messages::-webkit-scrollbar-thumb {
+            background: #d0d0d0;
+            border-radius: 3px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb:hover,
+        .chat-messages::-webkit-scrollbar-thumb:hover {
+            background: #b0b0b0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .sidebar {
+                width: 300px;
+            }
+
+            .message-bubble {
+                max-width: 75%;
+            }
+
+            .welcome-features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .app-container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                max-height: 40vh;
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+            }
+
+            .chat-main {
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="app-title">InsureCheck</div>
+                <div class="app-subtitle">Insurance Support Assistant</div>
+            </div>
+
+            <div class="sidebar-content">
+                <!-- Claim Section -->
+                <div class="section">
+                    <div class="section-title">Active Claim</div>
+                    <div class="input-group">
+                        <input 
+                            type="text" 
+                            id="claimInput" 
+                            class="input-field" 
+                            placeholder="Enter Claim ID"
+                        >
+                        <button class="btn btn-primary" onclick="selectClaim()">Select</button>
+                    </div>
+                    <button class="btn btn-secondary btn-full" onclick="clearClaim()">
+                        Clear Claim
+                    </button>
+                    
+                    <div id="claimInfo" class="hidden"></div>
+                    <div id="claimError" class="hidden"></div>
+                </div>
+
+                <!-- Policy Section -->
+                <div class="section">
+                    <div class="section-title">Policy Information</div>
+                    <div id="policyInfo">
+                        <div class="empty-state">
+                            No active policy. Select a claim to view the associated policy information.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upload Section -->
+                <div class="section">
+                    <div class="section-title">Custom Policy</div>
+                    <div class="upload-box">
+                        <div class="upload-icon">📄</div>
+                        <div class="upload-text">Upload Policy Document</div>
+                        <div class="upload-subtext">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="chat-main">
+            <div class="chat-header">
+                <div class="header-title">Chat with InsureCheck</div>
+                <div class="header-actions">
+                    <button class="btn btn-secondary" onclick="clearChat()">Clear Chat</button>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome">
+                    <div class="welcome-title">Welcome to InsureCheck</div>
+                    <div class="welcome-text">
+                        Your intelligent insurance assistant. Get instant answers about your claims, coverage, and policy details.
+                    </div>
+                    <div class="welcome-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🔍</div>
+                            <div class="feature-title">Claim Status</div>
+                            <div class="feature-desc">Track and understand your claim progress</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📋</div>
+                            <div class="feature-title">Policy Coverage</div>
+                            <div class="feature-desc">Learn about your benefits and coverage</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💬</div>
+                            <div class="feature-title">Quick Answers</div>
+                            <div class="feature-desc">Get instant responses to your questions</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📞</div>
+                            <div class="feature-title">Escalation</div>
+                            <div class="feature-desc">Connect with support when needed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="chatInput" 
+                        class="chat-input" 
+                        placeholder="Ask me anything about your insurance..."
+                        rows="1"
+                        onkeydown="handleKeyDown(event)"
+                        oninput="autoResize(this)"
+                    ></textarea>
+                    <button class="btn-send" id="sendBtn" onclick="sendMessage()">
+                        ➤
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentClaim = null;
+        let currentPolicy = null;
+
+        // Auto-resize textarea
+        function autoResize(textarea) {
+            textarea.style.height = 'auto';
+            textarea.style.height = Math.min(textarea.scrollHeight, 120) + 'px';
+        }
+
+        // Handle Enter key
+        function handleKeyDown(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                sendMessage();
+            }
+        }
+
+        // Select Claim
+        async function selectClaim() {
+            const claimId = document.getElementById('claimInput').value.trim();
+            
+            if (!claimId) {
+                showError('Please enter a claim ID');
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/set_claim', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ claim_id: claimId })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    currentClaim = claimId;
+                    currentPolicy = data.policy_name;
+                    
+                    showClaimInfo(data);
+                    showPolicyInfo(data.policy_name);
+                    hideError();
+                    
+                    addMessage('bot', `Claim #${claimId} loaded successfully. I now have access to your claim details and the associated ${data.policy_name.toUpperCase()} policy. How can I help you?`);
+                } else {
+                    showError(data.error);
+                }
+            } catch (error) {
+                showError('Error loading claim: ' + error.message);
+            }
+        }
+
+        // Clear Claim
+        async function clearClaim() {
+            try {
+                await fetch('/api/clear_claim', {
+                    method: 'POST'
+                });
+
+                currentClaim = null;
+                currentPolicy = null;
+                
+                document.getElementById('claimInput').value = '';
+                document.getElementById('claimInfo').classList.add('hidden');
+                document.getElementById('policyInfo').innerHTML = `
+                    <div class="empty-state">
+                        No active policy. Select a claim to view the associated policy information.
+                    </div>
+                `;
+                hideError();
+                
+                addMessage('bot', 'Claim cleared. You can ask general insurance questions or select a new claim.');
+            } catch (error) {
+                console.error('Error clearing claim:', error);
+            }
+        }
+
+        // Show Claim Info
+        function showClaimInfo(data) {
+            const claimInfoDiv = document.getElementById('claimInfo');
+            claimInfoDiv.innerHTML = `
+                <div class="info-card">
+                    <div class="info-row">
+                        <span class="info-label">Status</span>
+                        <span class="info-value">${data.claim_status}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Member</span>
+                        <span class="info-value">${data.member_name}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Coverage</span>
+                        <span class="info-value">${data.coverage_name}</span>
+                    </div>
+                </div>
+            `;
+            claimInfoDiv.classList.remove('hidden');
+        }
+
+        // Show Policy Info
+        function showPolicyInfo(policyName) {
+            const policyInfoDiv = document.getElementById('policyInfo');
+            policyInfoDiv.innerHTML = `
+                <div class="policy-badge">
+                    Policy ${policyName.toUpperCase()}
+                </div>
+                <div class="empty-state" style="margin-top: 12px;">
+                    Policy document is loaded and available for questions.
+                </div>
+            `;
+        }
+
+        // Show/Hide Error
+        function showError(message) {
+            const errorDiv = document.getElementById('claimError');
+            errorDiv.innerHTML = `<div class="error-card">${message}</div>`;
+            errorDiv.classList.remove('hidden');
+        }
+
+        function hideError() {
+            document.getElementById('claimError').classList.add('hidden');
+        }
+
+        // Send Message
+        async function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+
+            if (!message) return;
+
+            addMessage('user', message);
+            input.value = '';
+            input.style.height = 'auto';
+
+            showTyping();
+
+            const sendBtn = document.getElementById('sendBtn');
+            sendBtn.disabled = true;
+
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ question: message })
+                });
+
+                const data = await response.json();
+
+                hideTyping();
+                sendBtn.disabled = false;
+
+                if (data.success) {
+                    addMessage('bot', data.response);
+                } else {
+                    addMessage('bot', `I encountered an error: ${data.error}`);
+                }
+            } catch (error) {
+                hideTyping();
+                sendBtn.disabled = false;
+                addMessage('bot', 'I encountered a connection error. Please try again.');
+            }
+        }
+
+        // Add Message
+        function addMessage(type, content) {
+            const messagesDiv = document.getElementById('chatMessages');
+            
+            const welcomeMsg = messagesDiv.querySelector('.welcome');
+            if (welcomeMsg) {
+                welcomeMsg.remove();
+            }
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}`;
+
+            if (type === 'user') {
+                messageDiv.innerHTML = `
+                    <div class="message-bubble">${escapeHtml(content)}</div>
+                    <div class="message-avatar">U</div>
+                `;
+            } else {
+                messageDiv.innerHTML = `
+                    <div class="message-avatar">IC</div>
+                    <div class="message-bubble">${escapeHtml(content)}</div>
+                `;
+            }
+
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        // Show/Hide Typing
+        function showTyping() {
+            const messagesDiv = document.getElementById('chatMessages');
+            const typingDiv = document.createElement('div');
+            typingDiv.id = 'typingIndicator';
+            typingDiv.className = 'typing active';
+            typingDiv.innerHTML = `
+                <div class="message-avatar">IC</div>
+                <div class="typing-bubble">
+                    <div class="typing-dots">
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                    </div>
+                </div>
+            `;
+            messagesDiv.appendChild(typingDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        function hideTyping() {
+            const typingIndicator = document.getElementById('typingIndicator');
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+        }
+
+        // Clear Chat
+        async function clearChat() {
+            try {
+                await fetch('/api/clear_chat', {
+                    method: 'POST'
+                });
+
+                const messagesDiv = document.getElementById('chatMessages');
+                messagesDiv.innerHTML = `
+                    <div class="welcome">
+                        <div class="welcome-title">Welcome to InsureCheck</div>
+                        <div class="welcome-text">
+                            Your intelligent insurance assistant. Get instant answers about your claims, coverage, and policy details.
+                        </div>
+                        <div class="welcome-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">🔍</div>
+                                <div class="feature-title">Claim Status</div>
+                                <div class="feature-desc">Track and understand your claim progress</div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">📋</div>
+                                <div class="feature-title">Policy Coverage</div>
+                                <div class="feature-desc">Learn about your benefits and coverage</div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">💬</div>
+                                <div class="feature-title">Quick Answers</div>
+                                <div class="feature-desc">Get instant responses to your questions</div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">📞</div>
+                                <div class="feature-title">Escalation</div>
+                                <div class="feature-desc">Connect with support when needed</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } catch (error) {
+                console.error('Error clearing chat:', error);
+            }
+        }
+
+        // Utility
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML.replace(/\n/g, '<br>');
+        }
+
+        // Focus input on load
+        window.onload = function() {
+            document.getElementById('chatInput').focus();
+        };
+    </script>
+</body>
+</html>
